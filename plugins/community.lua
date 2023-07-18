@@ -6,12 +6,23 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
-  
+
   -- language specifications
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.proto" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.cpp" },
 
   -- AI copilot
-  { import = "astrocommunity.editing-support.chatgpt-nvim"},
+  { import = "astrocommunity.editing-support.chatgpt-nvim" },
+  {
+    "ChatGPT.nvim",
+    opts = {
+      openai_params = {
+        max_tokens = 1000,
+      },
+    },
+  },
 }
