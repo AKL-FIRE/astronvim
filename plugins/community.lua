@@ -6,4 +6,12 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  
+  -- language specifications
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.typescript" },
+
+  -- AI copilot
+  { import = "astrocommunity.editing-support.chatgpt-nvim"},
 }
