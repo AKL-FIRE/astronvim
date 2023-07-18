@@ -9,4 +9,15 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+
+  -- async task
+  {
+    "skywind3000/asynctasks.vim",
+    cmd = { "AsyncTask" },
+    dependencies = {
+      {
+        "skywind3000/asyncrun.vim",
+      },
+    },
+  }
 }

@@ -20,6 +20,13 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- async task
+    ["<leader>xr"] = { "<cmd>:AsyncTask build-and-run<cr>", desc = "run current svr" },
+    ["<leader>xb"] = { "<cmd>:AsyncTask build<cr>", desc = "build current svr" },
+    ["<leader>xa"] = { "<cmd>:AsyncTask build-and-run-all<cr>", desc = "all" },
+    ["<leader>xp"] = { "<cmd>:AsyncTask protoc<cr>", desc = "protoc" },
+    ["<leader>xd"] = { "<cmd>:AsyncTask build-for-debug<cr>", desc = "build current svr for debug" },
   },
   t = {
     -- setting a mapping to false will disable it
