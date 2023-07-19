@@ -15,6 +15,9 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
 
+  -- motion
+  { import = "astrocommunity.motion.flash-nvim" },
+
   -- AI copilot
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
