@@ -18,6 +18,9 @@ return {
   -- motion
   { import = "astrocommunity.motion.flash-nvim" },
 
+  -- cmp
+  { import = "astrocommunity.completion.cmp-cmdline" },
+
   -- AI copilot
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
