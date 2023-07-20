@@ -25,6 +25,9 @@ return {
   -- todo
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
+  -- spectre
+  { import = "astrocommunity.project.nvim-spectre" },
+
   -- AI copilot
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
