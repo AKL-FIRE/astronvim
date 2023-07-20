@@ -3,6 +3,8 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
+local utils = require "astronvim.utils"
+local get_icon = utils.get_icon
 return {
   -- first key is the mode
   n = {
@@ -24,6 +26,7 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- async task
+    ["<leader>x"] = { desc = " " .. "AsyncTask" },
     ["<leader>xr"] = { "<cmd>:AsyncTask build-and-run<cr>", desc = "run current svr" },
     ["<leader>xb"] = { "<cmd>:AsyncTask build<cr>", desc = "build current svr" },
     ["<leader>xa"] = { "<cmd>:AsyncTask build-and-run-all<cr>", desc = "all" },
