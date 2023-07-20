@@ -21,6 +21,9 @@ return {
   -- cmp
   { import = "astrocommunity.completion.cmp-cmdline" },
 
+  -- todo
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+
   -- AI copilot
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
