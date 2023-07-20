@@ -10,6 +10,7 @@ return {
   -- language specifications
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.proto" },
   { import = "astrocommunity.pack.python" },
