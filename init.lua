@@ -1,3 +1,6 @@
+-- if wsl, enable wsl clipboard
+require("user.utils.clipboard").set_wsl_clipboard()
+
 return {
   -- Configure AstroNvim updates
   updater = {
