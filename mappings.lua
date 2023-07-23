@@ -3,8 +3,6 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
-local utils = require "astronvim.utils"
-local get_icon = utils.get_icon
 return {
   -- first key is the mode
   n = {
@@ -25,16 +23,13 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
-    -- async task
-    ["<leader>x"] = { desc = " " .. "AsyncTask" },
-    ["<leader>xr"] = { "<cmd>:AsyncTask build-and-run<cr>", desc = "run current svr" },
-    ["<leader>xb"] = { "<cmd>:AsyncTask build<cr>", desc = "build current svr" },
-    ["<leader>xa"] = { "<cmd>:AsyncTask build-and-run-all<cr>", desc = "all" },
-    ["<leader>xp"] = { "<cmd>:AsyncTask protoc<cr>", desc = "protoc" },
-    ["<leader>xd"] = { "<cmd>:AsyncTask build-for-debug<cr>", desc = "build current svr for debug" },
+    -- overseer
+    ["<leader>x"] = { desc = " " .. "Task" },
+    ["<leader>xr"] = { "<cmd>:OverseerRun<cr>", desc = "Run task" },
+    ["<leader>xt"] = { "<cmd>:OverseerToggle<cr>", desc = "Toggle task log" },
 
     -- dap
-    ["<leader>dl"] = { "<cmd>:DapLoadLaunchJSON<cr>", desc = "load launch.json" },
+    ["<leader>dl"] = { "<cmd>:DapLoadLaunchJSON<cr>", desc = "Load launch.json" },
   },
   t = {
     -- setting a mapping to false will disable it
