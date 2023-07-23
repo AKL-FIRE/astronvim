@@ -15,6 +15,10 @@ return {
   { import = "astrocommunity.pack.proto" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.yaml" },
 
   -- motion
   { import = "astrocommunity.motion.flash-nvim" },
