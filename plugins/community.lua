@@ -19,6 +19,9 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.yaml" },
 
+  -- debug
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+
   -- motion
   { import = "astrocommunity.motion.flash-nvim" },
 
