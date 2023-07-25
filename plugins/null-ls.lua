@@ -16,6 +16,11 @@ return {
       null_ls.builtins.diagnostics.golangci_lint.with {
         timeout = 180000,
       },
+
+      -- clang-format
+      null_ls.builtins.formatting.clang_format.with {
+        filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
+      },
     }
     return config -- return final config table
   end,
