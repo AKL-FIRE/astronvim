@@ -24,12 +24,21 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- overseer
-    ["<leader>x"] = { desc = " " .. "Task" },
+    ["<leader>x"] = { desc = " " .. "Task" },
     ["<leader>xr"] = { "<cmd>:OverseerRun<cr>", desc = "Run task" },
     ["<leader>xt"] = { "<cmd>:OverseerToggle<cr>", desc = "Toggle task log" },
 
     -- dap
     ["<leader>dl"] = { "<cmd>:DapLoadLaunchJSON<cr>", desc = "Load launch.json" },
+
+    -- neotest
+    ["<leader>T"] = { desc = " " .. "Test" },
+    ["<leader>Tt"] = { "<cmd>lua require('neotest').summary.toggle()<cr>", desc = "toggle unit test" },
+    ["<leader>Tn"] = { "<cmd>lua require('neotest').run.run()<cr>", desc = "Run nearest test" },
+    ["<leader>Tc"] = { '<cmd>lua require("neotest").run.run(vim.fn.expand("%"))<cr>', desc = "Run current file test" },
+    ["<leader>Ts"] = { "<cmd>lua require('neotest').run.stop()<cr>", desc = "Stop nearest test" },
+    ["<leader>To"] = { "<cmd>lua require('neotest').output.open()<cr>", desc = "Display output of tests" },
+    ["<leader>Td"] = { "<cmd>lua require('dap-go').debug_test()<cr>", desc = "debug nearest test" },
   },
   t = {
     -- setting a mapping to false will disable it

@@ -34,6 +34,9 @@ return {
   -- spectre
   { import = "astrocommunity.project.nvim-spectre" },
 
+  -- test
+  { import = "astrocommunity.test.neotest" },
+
   -- AI copilot
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
