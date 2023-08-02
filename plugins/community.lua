@@ -19,6 +19,10 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.yaml" },
 
+  -- bars-and-lines
+  { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
+  { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
+
   -- debug
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
 
