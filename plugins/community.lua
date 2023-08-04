@@ -32,14 +32,17 @@ return {
   -- cmp
   { import = "astrocommunity.completion.cmp-cmdline" },
 
-  -- todo
-  { import = "astrocommunity.editing-support.todo-comments-nvim" },
-
   -- spectre
   { import = "astrocommunity.project.nvim-spectre" },
 
   -- test
   { import = "astrocommunity.test.neotest" },
+
+  -- todo
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+
+  -- refactory
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
 
   -- AI copilot
   { import = "astrocommunity.editing-support.chatgpt-nvim" },

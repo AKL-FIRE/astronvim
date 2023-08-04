@@ -39,6 +39,9 @@ return {
     ["<leader>Ts"] = { "<cmd>lua require('neotest').run.stop()<cr>", desc = "Stop nearest test" },
     ["<leader>To"] = { "<cmd>lua require('neotest').output.open()<cr>", desc = "Display output of tests" },
     ["<leader>Td"] = { "<cmd>lua require('dap-go').debug_test()<cr>", desc = "debug nearest test" },
+
+    -- refactory
+    ["<leader>r"] = { desc = "󱁤 " .. "Refactory" },
   },
   t = {
     -- setting a mapping to false will disable it
