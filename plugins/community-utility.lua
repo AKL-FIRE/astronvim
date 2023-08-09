@@ -1,4 +1,5 @@
 return {
+  { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
   {
     "folke/noice.nvim",

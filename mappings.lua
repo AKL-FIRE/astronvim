@@ -42,6 +42,12 @@ return {
 
     -- refactory
     ["<leader>r"] = { desc = "󱁤 " .. "Refactory" },
+
+    -- telescope search with parameters
+    ["<leader>fg"] = {
+      "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+      desc = "Find words with parameters",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
