@@ -18,6 +18,7 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.full-dadbod" },
 
   -- bars-and-lines
   { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
