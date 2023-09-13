@@ -42,9 +42,6 @@ return {
   -- todo
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
-  -- refactory
-  { import = "astrocommunity.editing-support.refactoring-nvim" },
-
   -- AI copilot
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
