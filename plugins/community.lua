@@ -7,21 +7,6 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
-  -- language specifications
-  { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.prisma" },
-  { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.cpp" },
-  { import = "astrocommunity.pack.cmake" },
-  { import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.json" },
-  { import = "astrocommunity.pack.yaml" },
-  { import = "astrocommunity.pack.full-dadbod" },
-
   -- bars-and-lines
   { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
   { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
