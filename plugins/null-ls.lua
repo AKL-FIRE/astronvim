@@ -15,6 +15,7 @@ return {
       -- go
       null_ls.builtins.diagnostics.golangci_lint.with {
         timeout = 180000,
+        method = null_ls.methods.DIAGNOSTICS_ON_SAVE,
       },
 
       -- clang-format
