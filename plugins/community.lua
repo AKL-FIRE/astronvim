@@ -14,6 +14,9 @@ return {
   -- motion
   { import = "astrocommunity.motion.flash-nvim" },
 
+  -- editting
+  { import = "astrocommunity.editing-support.nvim-devdocs" },
+
   -- cmp
   { import = "astrocommunity.completion.cmp-cmdline" },
 

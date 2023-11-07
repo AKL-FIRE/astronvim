@@ -43,6 +43,11 @@ return {
     -- refactory
     ["<leader>r"] = { desc = "󱁤 " .. "Refactory" },
 
+    -- Devdocs
+    ["<leader>D"] = { desc = "󰺅 " .. "Devdocs" },
+    ["<leader>Dt"] = { "<cmd>DevdocsOpenFloat<cr>", desc = "open devdocs in floating term" },
+    ["<leader>DT"] = { "<cmd>DevdocsOpen<cr>", desc = "open devdocs in buf" },
+
     -- telescope search with parameters
     ["<leader>fg"] = {
       "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
