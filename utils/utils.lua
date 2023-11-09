@@ -16,4 +16,13 @@ function M.get_os()
   return os
 end
 
+function M.get_buf_parent_directory_relative_path()
+  local current_buf = vim.api.nvim_get_current_buf()
+  local current_buf_name = vim.api.nvim_buf_get_name(current_buf)
+  local relative_path = vim.fn.fnamemodify(current_buf_name, ":~:.")
+  local parent_directory = vim.fn.fnamemodify(relative_path, ":h")
+  local parent_directory_name = vim.fn.fnamemodify(parent_directory, ":t")
+  return parent_directory_name
+end
+
 return M

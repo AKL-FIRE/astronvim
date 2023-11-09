@@ -16,6 +16,10 @@ return {
       null_ls.builtins.diagnostics.golangci_lint.with {
         timeout = 180000,
         method = null_ls.methods.DIAGNOSTICS_ON_SAVE,
+        extra_args = function(_)
+          local relative_path = require("user.utils.utils").get_buf_parent_directory_relative_path()
+          return { relative_path }
+        end,
       },
 
       -- clang-format
