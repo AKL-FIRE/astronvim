@@ -28,15 +28,4 @@ return {
 
   -- todo
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-
-  -- AI copilot
-  { import = "astrocommunity.editing-support.chatgpt-nvim" },
-  {
-    "ChatGPT.nvim",
-    opts = {
-      openai_params = {
-        max_tokens = 1000,
-      },
-    },
-  },
 }
