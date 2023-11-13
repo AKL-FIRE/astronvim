@@ -11,9 +11,6 @@ return {
   { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
   { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
 
-  -- motion
-  { import = "astrocommunity.motion.flash-nvim" },
-
   -- editting
   { import = "astrocommunity.editing-support.nvim-devdocs" },
 

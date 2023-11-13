@@ -53,6 +53,12 @@ return {
       "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
       desc = "Find words with parameters",
     },
+
+    -- flash
+    ["<leader>j"] = {
+      function() require("flash").jump() end,
+      desc = "Flash",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
