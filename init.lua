@@ -1,5 +1,10 @@
 -- if wsl, enable wsl clipboard
 require("user.utils.clipboard").set_wsl_clipboard()
+-- if neovide, load neovide config
+if vim.g.neovide then
+  local neovide = require "user.utils.neovide"
+  neovide.init()
+end
 
 return {
   -- Configure AstroNvim updates
