@@ -1,12 +1,13 @@
 local M = {}
 
 function M.init()
+  print "init the neovide config"
   M.config()
   M.refresh(60, 5)
 end
 
 function M.config()
-  vim.o.guifont = "FiraCode Nerd Font:h13"
+  vim.o.guifont = "FiraCode Nerd Font,Hack Nerd Font:h13"
   -- 没有空闲
   vim.g.neovide_no_idle = true
   -- 退出需要确认
@@ -25,6 +26,8 @@ function M.config()
   -- vim.g.neovide_touch_drag_timeout = 0.17
   -- 开启轨道动画
   vim.g.neovide_cursor_vfx_mode = "railgun"
+  -- 设置neovide clipboard
+  vim.o.clipboard = "unnamedplus"
 end
 
 function M.background()
