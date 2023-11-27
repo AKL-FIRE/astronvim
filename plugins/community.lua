@@ -13,7 +13,6 @@ return {
 
   -- editting
   { import = "astrocommunity.editing-support.nvim-devdocs" },
-  { import = "astrocommunity.editing-support.multicursors-nvim" },
 
   -- cmp
   { import = "astrocommunity.completion.cmp-cmdline" },
